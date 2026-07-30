@@ -3,6 +3,17 @@
 Updated: 2026-07-30 evening (office PC)
 
 ## Done
+- **Fresh-agent generalization test PASSED (2026-07-30 evening):** a context-free session cut the
+  same footage from repo docs alone (WORKFLOW-RULES + TASTE + skills; STATUS/receipts/renders
+  quarantined). Result `handguards_install_v02_fresh`: 4:01 / 22 cuts — structurally Dan-shaped
+  (one side only, glamour shot as the "repeat other side" beat, pointing inserts dropped, beats
+  deliberately long for trimming) where v01-with-context was 4:27 and structure-divergent.
+  Verdict: TASTE.md + skills carry the editing knowledge; remaining gap is pacing/fastener
+  screen-time distribution (intentionally long) and open taste questions (cold-open placement,
+  glamour enders in install body). Caveat: TASTE was derived from this footage — true
+  generalization test is the next new shoot. Three-way diff vs Dan's finesse (2:40 / 33 cuts)
+  in this session's transcript; Dan's finesse lives in `04_edit\evolutionr_canyon_handguards.prproj`
+  as "handguards_install_v01 DAN FINESSE".
 - **Discovery pilot CUT (2026-07-30): evolutionr_canyon handguards — picture-first MOS install
   edit, no script/VO/product page.** 4:27 rough cut in Resolve (`handguards_install_v01`),
   20 cuts + 3 muted V2 alternates, 4 chapter + 4 question markers, review render in
