@@ -15,7 +15,8 @@ Updated: 2026-07-30 evening (office PC)
 - 5 skills built & installed to `~/.claude/skills/`: slingmods-video / -script / -intro / -install / -outro.
 - Project template deployed: `M:\_template` (numbered pipeline folders). Old `M:\folder format` reorganized in place.
 - Claude workspace created: `E:\claude\{projects,cache,resolve,renders,_archive}`.
-- `WORKFLOW-RULES.md` drafted — **awaiting Dan's edit/approval.**
+- `WORKFLOW-RULES.md` approved as working doc (Dan, 2026-07-30) — E: backup-gated, M: hands-off until specified.
+- **23.976 sequence standard confirmed against ground truth 2026-07-30:** all sampled channel uploads are 24000/1001. Tick-math table in skills independently re-verified (6/6 exact-integer match).
 
 ## Open — Dan's court
 - [ ] Approve/edit `WORKFLOW-RULES.md` (then Claude updates skills to reference the Resolve-draft flow).
