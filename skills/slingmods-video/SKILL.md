@@ -63,6 +63,17 @@ the cut list must record each clip's native fps (`ffprobe`), never assume it.
    Studio 20.2.2.10). Cut lists use 0-based frames, out-exclusive, and are written from Resolve's
    readback (`timeline.source_range_report`), never from intent.
 
+## Discovery mode (when inputs are missing — common, not exceptional)
+Many real projects arrive incomplete: no product page yet, no script, no VO, thin vendor instructions.
+**The pipeline is a default, not a gate.** Never block or nag for missing inputs — adapt:
+- No script/VO → cut **picture-first** (silent/MOS): sequence the install logically from the footage +
+  whatever docs exist (vendor PDF, Dan's notes), pace it watchably, leave room for VO to be written to
+  the cut later ("cut first, write to picture" — the reverse of the formula, equally legitimate).
+- No product page → skip script formulas; note what's missing in the review handoff, don't invent facts.
+- The style spec still applies where it can (chapter order, insert close-ups, honest pacing) — as
+  reference, not requirement. Creative judgment over formula compliance. When in doubt, make the cut
+  and flag the doubt as a marker instead of stopping to ask.
+
 ## Hard rules
 - Dan finesses every install section — deliver rough cut + markers + muted alternates track, not "final."
 - Rough-cut accuracy promise is ±1s per cut. Don't claim better.
