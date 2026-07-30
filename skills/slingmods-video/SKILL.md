@@ -36,7 +36,32 @@ PROJECT INFO block has product URL, vehicle, vendor, and status checkboxes. Key 
    assembled in **Resolve on E:**, keeping a data cut list (`99_claude\cut-list.md`: clip path, in, out, track).
 5. **Review** — render review copy to `05_exports\review\`, tell Dan exactly what to check and what's flagged.
 6. **Handoff** — on approval, rebuild the timeline **natively in Premiere via MCP from the cut list**
-   (no XML, no baked re-detect; XML is fallback). Dan transfers/relinks to M: on his side.
+   (no XML, no baked re-detect; XML is fallback — using it is a finding to report, not a silent switch).
+   Rebuild is not done until the readback diff (below) is clean. Dan transfers/relinks to M: on his side.
+
+## Premiere MCP rebuild doctrine (proven by round-trip test 2026-07-30 — receipt: `analysis/roundtrip-verify-2026-07-30.md`)
+
+**Sequence standard: 23.976 fps (24000/1001).** Sources are mixed-rate (120fps glamour, 29.97 install, etc.) —
+the cut list must record each clip's native fps (`ffprobe`), never assume it.
+
+1. **NEVER call the MCP `create_sequence` tool.** Without a preset it opens Premiere's modal New Sequence
+   dialog and the whole bridge goes deaf (even ping) until a human dismisses it. Create sequences via
+   `execute_extendscript`: `app.project.createNewSequenceFromClips(name, [projectItem])` (dialog-free,
+   matches the seed clip's format — seed with a clip of the target format), then lift the seed clip
+   (video and audio are separate track items; remove both).
+2. **Placement is seconds-based** (`add_to_timeline_batch`: `time`, `sourceInPoint/sourceOutPoint`).
+   Convert with rational math at full precision: timeline frame N @23.976 → `N * 1001 / 24000` s;
+   source frame F → `F / native_fps` s (rational, e.g. `F * 1001 / 30000` for 29.97).
+   The batch result's `inPoint/outPoint` are TIMELINE positions, not source — never diff against them.
+3. **Mandatory verification — no rebuild is reported done without it.** Read every track item back via
+   `execute_extendscript` in **ticks** (254,016,000,000 ticks/sec; integer per frame at every Premiere rate)
+   and diff against `cut-list.md`: source path, source in/out, timeline in/out, track — show the table.
+   Ticks per frame: 23.976 → 10,594,584,000 · 29.97 → 8,475,667,200 · 30 → 8,467,200,000 ·
+   59.94 → 4,237,833,600 · 60 → 4,233,600,000 · 120 → 2,116,800,000.
+   Pass = 0 frame deltas at the timeline rate. Any nonzero delta or unlinked item = stop and report.
+4. **Resolve side:** `create_timeline_from_clips` `end_frame` is out-**exclusive** (probed on
+   Studio 20.2.2.10). Cut lists use 0-based frames, out-exclusive, and are written from Resolve's
+   readback (`timeline.source_range_report`), never from intent.
 
 ## Hard rules
 - Dan finesses every install section — deliver rough cut + markers + muted alternates track, not "final."

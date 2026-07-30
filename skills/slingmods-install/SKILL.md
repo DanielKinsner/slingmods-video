@@ -28,8 +28,12 @@ Drop a Premiere marker at each chapter start, named exactly like that — Dan ex
 
 ## Timeline delivery
 - Draft lives in **DaVinci Resolve on E:** — maintain `99_claude\cut-list.md` as the source of truth
-  (clip path, source in/out, timeline position, track) so the cut is rebuildable as data.
+  (clip path, **native fps per clip**, source in/out, timeline position, track) so the cut is rebuildable
+  as data. Frames are 0-based, out-exclusive; write the list from Resolve's readback
+  (`timeline.source_range_report`), not from intent. Timelines are 23.976.
 - V1: the cut · V2 (muted): alternates aligned under their moment · A1: VO · A2: music (duck under VO) ·
   markers: chapters + every uncertain decision, phrased as a question Dan can answer at a glance.
 - Render review copy to `05_exports\review\` and tell Dan: what to check, where the markers are, what's flagged.
-- On Dan's approval: rebuild natively in Premiere via MCP from the cut list (XML export is the fallback).
+- On Dan's approval: rebuild natively in Premiere via MCP from the cut list, following the
+  **Premiere MCP rebuild doctrine** in `slingmods-video` (no `create_sequence`; tick-readback diff
+  mandatory before reporting done). XML export is the fallback — say so explicitly if used.
