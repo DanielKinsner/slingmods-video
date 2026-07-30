@@ -12,10 +12,14 @@ Updated: 2026-07-30 (office PC)
 
 ## Open — Dan's court
 - [ ] Approve/edit `WORKFLOW-RULES.md` (then Claude updates skills to reference the Resolve-draft flow).
-- [ ] ElevenLabs: API key + voice ID into a local `.env`; tell Claude the path. (Blocks pilot VO.)
-- [ ] One-time clicks: Premiere → Window → Extensions → MCP Bridge → Start Bridge · Resolve → Preferences → General → External scripting = Local.
-- [ ] Music source: where beds come from (library/subscription/folder).
 - [ ] Offsite backup decision (second external at home or cloud) — flagged, Dan's call.
+
+## Decided 2026-07-30
+- [x] One-time clicks DONE in both Premiere (MCP Bridge started) and Resolve (external scripting = Local).
+- **ElevenLabs: Dan carries VO himself for now** (company account; wants to see edit quality first). Claude
+  works against Dan-supplied VO files in `02_audio\voiceover\`. Revisit after successful tests.
+- **Music: deferred the same way.** After confirmation, Dan supplies a folder of licensed Artlist/Epidemic
+  regulars for Claude to pick from. Until then Dan places music.
 
 ## Open — Claude's court (after the above)
 - [ ] Round-trip test: dummy cut in Resolve on E: → MCP rebuild in Premiere → verify linked & frame-accurate.
