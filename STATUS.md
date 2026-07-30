@@ -30,10 +30,10 @@ Updated: 2026-07-30 evening (office PC)
 
 ## Open — Claude's court (after the above)
 - [x] Round-trip test: dummy cut in Resolve on E: → MCP rebuild in Premiere → verify linked & frame-accurate. **PASSED 2026-07-30, see Done.**
-- [ ] Update skills with round-trip gotchas: never call MCP `create_sequence` (modal deadlock);
-  sequence creation via ExtendScript `createNewSequenceFromClips` + lift seed clip; verify every
-  rebuild with tick-precision readback diff against cut-list.md; 29.97 fps tick-math handling
-  before pilot uses real footage.
+- [x] Update skills with round-trip gotchas — done 2026-07-30: rebuild doctrine in `slingmods-video`
+  skill (no `create_sequence`, ES sequence creation, mandatory tick-readback diff, fps/tick table),
+  cut-list conventions in `slingmods-install`, verification line in WORKFLOW-RULES §9.
+  **Sequence standard confirmed by Dan: 23.976** (sources mixed: 120fps glamour, 29.97, etc.).
 - [ ] Point Resolve cache/optimized-media locations at `E:\claude\resolve\` (needs Resolve open).
 - [ ] Update skills for the Resolve-draft handoff once rules are approved.
 - [ ] Capture Dan's sequence preset (res/fps) from a real .prproj during pilot; bake into skills.

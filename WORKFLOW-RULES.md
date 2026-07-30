@@ -44,7 +44,8 @@
 8. Claude drafts install cut in Resolve → renders review copy to the project's `05_exports\review\`.
 9. On approval: Claude rebuilds the timeline natively in Premiere via MCP from the cut list (no XML, no baked
    export). Rebuild may happen on E: before transfer; Dan transfers to M: and relinks (his step, always).
-   XML export is the fallback if MCP rebuild misbehaves.
+   XML export is the fallback if MCP rebuild misbehaves — and using it gets reported, never silently.
+   **A rebuild is verified by a frame-level readback diff against cut-list.md before Dan is told it's ready.**
 10. Dan paces/finesses every install final. Claude's deliverable is rough cut + chapter markers + muted
     alternates track + flagged questions.
 
