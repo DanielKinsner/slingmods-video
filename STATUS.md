@@ -3,6 +3,21 @@
 Updated: 2026-07-30 evening (office PC)
 
 ## Done
+- **Discovery pilot CUT (2026-07-30): evolutionr_canyon handguards — picture-first MOS install
+  edit, no script/VO/product page.** 4:27 rough cut in Resolve (`handguards_install_v01`),
+  20 cuts + 3 muted V2 alternates, 4 chapter + 4 question markers, review render in
+  `05_exports\review\`. What the footage supported: full BRP-deflector story (remove → bench
+  assembly → reinstall → final), side A full / side B compressed. Judgment calls that came up:
+  (1) the two instruction docs describe DIFFERENT products — BRP PDF matches footage, Dan's
+  photographed sheet is a different aftermarket kit, kept for reference only; (2) presenter
+  points at things in insert clips 5744/5745 — inaudible without transcription, kept + flagged;
+  (3) no Loctite, film-peel, or mirror-readjust moments on camera — VO/pickup flags in markers.
+  Process learning: 4s contact sheets alone misplace ~30% of cut points (6/20 landed on empty
+  frames/dead beats) — a boundary-frame QC pass before render is now the discovery-mode norm,
+  plus a contact-sheet watch of the RENDER itself (caught a 5s dead-air tail and a V2 alternate
+  overhanging the timeline end → 6s black tail). Resolve render gotchas: default render is
+  timeline-resolution 4K (~4.7GB) — always set FormatWidth/Height 1920x1080 for review copies;
+  render range covers disabled tracks' extent, so alternates must never extend past V1's end.
 - **Round-trip test PASSED (2026-07-30): Resolve draft → MCP-native Premiere rebuild, 12/12 track
   items frame-accurate, 0 off-by, 0 unlinked, no XML fallback needed.** Test project:
   `E:\claude\projects\_roundtrip-test\` (cut-list.md + roundtrip-verify.md in `99_claude\`).
