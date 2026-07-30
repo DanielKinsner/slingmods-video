@@ -1,17 +1,20 @@
-# Workflow Rules — DRAFT (pending Dan's approval)
+# Workflow Rules — working doc
 
-> Status: **DRAFT.** Dan owns codification. Edit, strike, or rewrite anything here; Claude follows the
-> approved version and updates the skills to match only after Dan signs off.
-> Agreed in conversation 2026-07-30.
+> Status: **Working doc**, Dan-approved 2026-07-30. Evolves as the workflow proves itself;
+> Dan has final say on changes, Claude keeps skills in sync with this file.
 
 ## Drive roles
 
 | Drive | Role | Claude access |
 |---|---|---|
-| **M:** | Dan's finishing world — Premiere projects, final media | Deliver-only: VO files, overlays, MCP timeline rebuilds. Never reads source media from M:. |
-| **E:\claude\** | Claude's entire world — drafts, caches, Resolve work, renders | Full. Everything Claude touches lives here. |
-| **E:\ (rest)** | Dan's existing projects and caches | Off-limits. |
+| **M:** | Dan's projects and finishing world | **Hands off until Dan specifies.** Deliveries (VO, overlays, MCP rebuilds) happen when Dan says go. |
+| **E:** | Claude's drive | Free to work — **precondition: E: is backed up before any project starts; confirm with Dan at kickoff.** Claude's work stays organized under `E:\claude\`. |
 | **14TB external(s)** | Backup truth | **Never touched, connected or not.** Stays physically disconnected except during Dan's transfer sessions. |
+
+## Backup gates (before work begins)
+
+- **E:** Dan backs up E: before handing Claude a project; Claude confirms "backup current?" at every project kickoff.
+- **M:** Dan populates a separate external backup of M: before ever handing Claude access to it.
 
 ## E:\claude layout
 
@@ -50,3 +53,8 @@
 11. Nothing at E:\claude root — files live in the five known folders. Ambiguous/stale things go to `_archive\`,
     never deleted by Claude (`_trash\` inside projects means "Claude wanted to delete, Dan decides").
 12. Subagents inherit all of the above and get exact paths, never "go find it."
+
+## Current phase (revisit after successful tests)
+
+13. **VO:** Dan generates ElevenLabs VO himself (company account) and drops files in `02_audio\voiceover\`.
+14. **Music:** Dan places music; a folder of licensed Artlist/Epidemic regulars comes to Claude later.

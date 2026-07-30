@@ -27,6 +27,9 @@ Drop a Premiere marker at each chapter start, named exactly like that — Dan ex
 - VO and action must agree: if VO says "three cranks," the shot shows three cranks (audio transients locate them).
 
 ## Timeline delivery
+- Draft lives in **DaVinci Resolve on E:** — maintain `99_claude\cut-list.md` as the source of truth
+  (clip path, source in/out, timeline position, track) so the cut is rebuildable as data.
 - V1: the cut · V2 (muted): alternates aligned under their moment · A1: VO · A2: music (duck under VO) ·
   markers: chapters + every uncertain decision, phrased as a question Dan can answer at a glance.
-- Export review copy to `05_exports\review\` and tell Dan: what to check, where the markers are, what's flagged.
+- Render review copy to `05_exports\review\` and tell Dan: what to check, where the markers are, what's flagged.
+- On Dan's approval: rebuild natively in Premiere via MCP from the cut list (XML export is the fallback).

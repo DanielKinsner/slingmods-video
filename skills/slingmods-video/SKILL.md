@@ -19,18 +19,27 @@ PROJECT INFO block has product URL, vehicle, vendor, and status checkboxes. Key 
 - `02_audio\{voiceover,music,sfx}` · `03_graphics\{logos,overlays,...}` · `04_edit\` (.prproj)
 - `05_exports\{review,final,thumbs}` · `99_claude\` (YOUR workspace: footage-log.md, cut-list.md, event-log.md)
 
+## Drives & rules of the road (full text: WORKFLOW-RULES.md in the repo)
+- Claude works on **E:** (projects live in `E:\claude\projects\`). **M: is hands-off until Dan specifies.**
+- **Kickoff gate: confirm with Dan that E: is backed up** before starting any project.
+- Drafting happens in **DaVinci Resolve**; Premiere is Dan's bay — MCP touches it only on Dan's go, and any
+  work on a final timeline starts with Save As → `*_claude.prproj` version.
+
 ## Pipeline order
 1. **Ingest** — inventory `01_footage\`; auto-split glamour vs install by fps (`ffprobe` — 120/60fps = glamour
    candidates). Frame-sample + transcribe narration + audio-transient scan. Write `99_claude\footage-log.md`
    and flag garbage (blur/exposure). Show Dan the log BEFORE cutting.
-2. **Script** — `slingmods-script`. Dan approves before VO generation. Always.
-3. **VO** — ElevenLabs (key in local .env, never in chat). Render per-section files to `02_audio\voiceover\`.
-4. **Assemble** — `slingmods-intro`, then `slingmods-install` (install videos only), then `slingmods-outro`.
-   Premiere MCP does timeline work; requires Dan's Premiere open with MCP Bridge panel started.
-5. **Review** — export rough cut to `05_exports\review\`, tell Dan exactly what to check and where markers are.
+2. **Script** — `slingmods-script`. Dan approves. Always.
+3. **VO** — *current phase:* Dan generates ElevenLabs VO himself and drops per-section files in
+   `02_audio\voiceover\`. Dan also places music for now.
+4. **Draft** — `slingmods-intro`, then `slingmods-install` (install videos only), then `slingmods-outro` —
+   assembled in **Resolve on E:**, keeping a data cut list (`99_claude\cut-list.md`: clip path, in, out, track).
+5. **Review** — render review copy to `05_exports\review\`, tell Dan exactly what to check and what's flagged.
+6. **Handoff** — on approval, rebuild the timeline **natively in Premiere via MCP from the cut list**
+   (no XML, no baked re-detect; XML is fallback). Dan transfers/relinks to M: on his side.
 
 ## Hard rules
-- Never edit while Dan is actively cutting (MCP drives his live Premiere).
 - Dan finesses every install section — deliver rough cut + markers + muted alternates track, not "final."
 - Rough-cut accuracy promise is ±1s per cut. Don't claim better.
 - Fitment years/models in any copy come from the product page verbatim — never paraphrase fitment.
+- Subagents get exact paths, never "go find it." Externals are never touched, connected or not.
