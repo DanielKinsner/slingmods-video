@@ -12,7 +12,11 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
 2. **Hardware loosening/tightening: show the "break" + ~3–4 full tool turns (~3s), never
    the full run-down** unless the process is genuinely short. T-handle pattern when
    available: break with the top of the T (full torque), then spin with the bottom.
-   The rest of the action is inferred. Slightly more breathing room than 3s is OK.
+   The rest of the action is inferred. **Rough cuts should run LONGER than final pace** —
+   it's harder to add than to cut; Dan trims ends. The non-negotiable is that the ACTION is
+   fully in frame so trimming is all he needs to do. Beats can lengthen whenever uncertain.
+2b. **Fastener groups: first fastener gets most/all of its action; subsequent fasteners in
+   the group get progressively less screen time.** (Dan, 2026-07-30)
 3. **Removal of an OE piece gets shown ~95% of the time, in frame** (e.g. bracket coming
    off the bar end). Never infer the part leaving the vehicle.
 4. **Reassembly grammar (the canonical beat template):** bring bracket/part into frame →
@@ -33,10 +37,15 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
 
 ## Structure
 
-10. **Mirrored L/R installs: pick ONE side and stay there.** Choose the best side (better
-    shot quality OR more detail shown by installer); VO says "repeat on the other side."
-    Never bounce left↔right through the edit. Editing both sides is acceptable only when
-    unsure which is best — but still no interleaving. (Dan, in his own words, 2026-07-30)
+10. **Mirrored L/R installs: pick ONE side and stay there.** Evaluate BOTH sides at ingest —
+    installers often shoot the FIRST side in more detail, but execute the SECOND side more
+    smoothly (familiarity). Go with whichever side you have more end-to-end confidence in.
+    Never bounce left↔right through the edit. **The "repeat on the other side" beat is a
+    GLAMOUR shot of the other side already installed** — not work footage of the second
+    side. (Dan, 2026-07-30)
+10b. **Punch-ins are authorized.** Scale/reposition 4K shots whenever framing is ambiguous
+    or the action is small in frame — commit to it confidently; Dan can adjust easily and
+    everything added is appreciated. Reference-wide first, then the punched close-up.
 11. **Cold-open product tease: nice-to-have, not mandatory** — the installer doesn't always
     shoot that material. Keep when the footage gives it.
 12. **Presenter pointing/explainer shots without known meaning: cut them.** Dan dropped both
