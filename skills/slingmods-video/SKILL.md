@@ -51,8 +51,14 @@ the cut list must record each clip's native fps (`ffprobe`), never assume it.
    (video and audio are separate track items; remove both).
 2. **Placement is seconds-based** (`add_to_timeline_batch`: `time`, `sourceInPoint/sourceOutPoint`).
    Convert with rational math at full precision: timeline frame N @23.976 → `N * 1001 / 24000` s;
-   source frame F → `F / native_fps` s (rational, e.g. `F * 1001 / 30000` for 29.97).
+   source frame F → `F / native_fps` s (rational, e.g. `F * 1001 / 30000` for 29.97) — **then add
+   +2 ms to every value** (time, in, out). Measured 2026-07-30 (Premiere 26.3): raw float values
+   land a hair below the frame boundary and Premiere FLOORS a full frame — 6/23 items came in
+   off-by-one (short cuts with 1-frame gaps, shifted sources) until the +2 ms bias fixed all of
+   them. Removing a linked video item can also strand a 1-frame audio sliver — re-verify audio.
    The batch result's `inPoint/outPoint` are TIMELINE positions, not source — never diff against them.
+   Project open/create via API refuses on Premiere 26.3 (create_project/open_project/app.newProject
+   all return false): Dan opens the target .prproj manually; the bridge works only inside it.
 3. **Mandatory verification — no rebuild is reported done without it.** Read every track item back via
    `execute_extendscript` in **ticks** (254,016,000,000 ticks/sec; integer per frame at every Premiere rate)
    and diff against `cut-list.md`: source path, source in/out, timeline in/out, track — show the table.
