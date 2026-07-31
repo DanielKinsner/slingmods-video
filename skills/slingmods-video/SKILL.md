@@ -80,6 +80,14 @@ Many real projects arrive incomplete: no product page yet, no script, no VO, thi
   reference, not requirement. Creative judgment over formula compliance. When in doubt, make the cut
   and flag the doubt as a marker instead of stopping to ask.
 
+## Resolve review renders (measured 2026-07-30)
+- Always set `FormatWidth/FormatHeight` **1920×1080** on review renders — Resolve defaults to
+  timeline resolution (4K ≈ 4.7GB for 4½ min).
+- The render range covers DISABLED tracks' extent: **muted V2 alternates must never extend past
+  V1's end** or the render grows a black tail. Trim alternates flush.
+- After rendering: ffprobe the frame count against the cut list AND contact-sheet-watch the
+  render itself (catches dead-air tails and black gaps that per-cut QC misses).
+
 ## Hard rules
 - **Read `TASTE.md` (repo root) before cutting anything, and check every chapter against it
   before rendering** — it's Dan's editing-style ledger, grown from finesse-diffs; the
