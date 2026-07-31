@@ -144,6 +144,11 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
     curates via feedback and the keepers graduate into this doc and STYLE-SPEC. The ONE
     persistent element that predates all of this: the red/black product footer, spec'd in
     STYLE-SPEC §Graphics. (Dan, 2026-07-31)
+    **When Dan gives a style reference, confirm WHICH layer he's pointing at before
+    running with it** — format/structure (e.g. "full-screen animated scenes"), motion
+    grammar, or surface aesthetic. They're independent; assuming "all of it" transcribed a
+    playful doodle look onto a product that wanted iPhone-launch sleekness (2026-07-31).
+    Default assumption: Dan means the STRUCTURE unless he says "copy the look."
 21. **Masking + transforms are open season.** Cut UI displays out with a mask and reuse them
     as design elements over action shots; take liberties with color correction, scaling,
     positioning, and keyframed transforms whenever it serves the VO. (Dan: "i'd encourage it")
