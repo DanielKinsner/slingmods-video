@@ -1,8 +1,19 @@
 # STATUS — slingmods-video pipeline
 
-Updated: 2026-07-30 evening (office PC)
+Updated: 2026-07-31 morning (office PC)
 
 ## Done
+- **Fresh-test round 2 (Opus 5, xhigh) analyzed + debriefed (2026-07-31):** v03 cut 4:53/37 —
+  stronger reasoning (evidence-driven side pick, punch-ins, kit-contents idea), weaker perception
+  (false "no tool" claim traced to a crop window that excluded the tool; verified from its own
+  saved crops). Both fresh agents were interrogated post-hoc; their answers + Dan's v03 notes are
+  encoded in TASTE (rules 2c-2e, 3-5 rewording, 5c/5d, 12, 17) and the skill (frame-level
+  verification pass, docs-never-veto-footage, crew-audio-as-hint) — commits 972fc1d, 717f1d9.
+  **Decision: v02 (Fable fresh) is the keeper for handguards** — Dan finesses it (~2 min of work);
+  timeline intact in Resolve project "evolutionr_canyon handguards FRESH", cut list + render in
+  `99_claude\`/`05_exports\review\`. No Premiere rebuild needed (Dan's own edit lives in the
+  04_edit prproj). Caveat noted: agent debriefs are post-hoc reasoning — rules were kept
+  behavioral, not tuned to this footage's specifics.
 - **Fresh-agent generalization test PASSED (2026-07-30 evening):** a context-free session cut the
   same footage from repo docs alone (WORKFLOW-RULES + TASTE + skills; STATUS/receipts/renders
   quarantined). Result `handguards_install_v02_fresh`: 4:01 / 22 cuts — structurally Dan-shaped
@@ -67,8 +78,12 @@ Updated: 2026-07-30 evening (office PC)
 - [ ] Possible `slingmods-publish` skill: YouTube title/description/chapters/tags formula (titles follow "Product for the Vehicle" pattern — data already in analysis/summary.json).
 
 ## Next milestone
-**Pilot video** (option B): Dan copies `_template` into `E:\claude\projects\`, drops footage from a recent
-shoot, gives product URL → Claude runs footage log → script (Dan approves) → VO → Resolve rough cut → review.
+**thermal_spyder f3t exhaust — INSTALL SECTION ONLY, fresh-agent generalization test** (the first
+run on footage TASTE was not derived from; no quarantine needed). 5 install clips @23.976 (~6 min
+total). `00_docs\spyder RT instructions as reference.txt` is Dan-authored + verified from a
+near-identical RT install: treat as expected beat structure, footage stays ground truth. B-roll
+(28 clips) is explicitly out of scope for this pass; glamour/talking-head/stock buckets empty;
+README PROJECT INFO unfilled. Claude-lead grades the result against TASTE + Dan's finesse.
 
 ## Machines
 Office PC = fully set up. Home PC / MacBook = nothing installed yet (repo README has install steps; MCPs would need per-machine setup).
