@@ -28,14 +28,20 @@ PROJECT INFO block has product URL, vehicle, vendor, and status checkboxes. Key 
 ## Pipeline order
 1. **Ingest** — inventory `01_footage\`; auto-split glamour vs install by fps (`ffprobe` — 120/60fps = glamour
    candidates). Frame-sample + transcribe narration + audio-transient scan. Transcribe CREW audio too —
-   off-hand remarks settle part/side identity (proven 2026-07-30: "It's the right side" drove side
-   selection + continuity). Write `99_claude\footage-log.md`
+   off-hand remarks are HINTS for part/side identity, never proof (Whisper transcripts carry garbage
+   lines); confirm side/part identity from on-screen geometry or log it as UNKNOWN (TASTE 17).
+   Footage-log beat labels come only from frames actually viewed — never from motion-energy curves
+   or audio scans alone. Write `99_claude\footage-log.md`
    and flag garbage (blur/exposure). Show Dan the log BEFORE cutting.
 2. **Script** — `slingmods-script`. Dan approves. Always.
 3. **VO** — *current phase:* Dan generates ElevenLabs VO himself and drops per-section files in
    `02_audio\voiceover\`. Dan also places music for now.
 4. **Draft** — `slingmods-intro`, then `slingmods-install` (install videos only), then `slingmods-outro` —
    assembled in **Resolve on E:**, keeping a data cut list (`99_claude\cut-list.md`: clip path, in, out, track).
+   Before locking any cut: a **frame-level verification pass** — 1fps micro-sheets over every chosen
+   window, confirming each beat's claimed action actually occurs on screen (a still with a tool in
+   hand is not verification of a tool turn). This single pass prevents the three chronic miss classes
+   (TASTE 5b) at once.
 5. **Review** — render review copy to `05_exports\review\`, tell Dan exactly what to check and what's flagged.
 6. **Handoff** — on approval, rebuild the timeline **natively in Premiere via MCP from the cut list**
    (no XML, no baked re-detect; XML is fallback — using it is a finding to report, not a silent switch).
