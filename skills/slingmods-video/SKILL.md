@@ -27,7 +27,9 @@ PROJECT INFO block has product URL, vehicle, vendor, and status checkboxes. Key 
 
 ## Pipeline order
 1. **Ingest** — inventory `01_footage\`; auto-split glamour vs install by fps (`ffprobe` — 120/60fps = glamour
-   candidates). Frame-sample + transcribe narration + audio-transient scan. Write `99_claude\footage-log.md`
+   candidates). Frame-sample + transcribe narration + audio-transient scan. Transcribe CREW audio too —
+   off-hand remarks settle part/side identity (proven 2026-07-30: "It's the right side" drove side
+   selection + continuity). Write `99_claude\footage-log.md`
    and flag garbage (blur/exposure). Show Dan the log BEFORE cutting.
 2. **Script** — `slingmods-script`. Dan approves. Always.
 3. **VO** — *current phase:* Dan generates ElevenLabs VO himself and drops per-section files in
@@ -76,6 +78,10 @@ Many real projects arrive incomplete: no product page yet, no script, no VO, thi
   whatever docs exist (vendor PDF, Dan's notes), pace it watchably, leave room for VO to be written to
   the cut later ("cut first, write to picture" — the reverse of the formula, equally legitimate).
 - No product page → skip script formulas; note what's missing in the review handoff, don't invent facts.
+- **Vendor docs never veto footage.** `00_docs` often holds sheets for similar-but-differently-named
+  products. If the footage shows a step (e.g. washers onto screws), it's IN the cut even if the
+  best-matching doc omits it — footage is ground truth for what happened; docs only inform order and
+  naming. Never conclude a hardware step "belongs to the other product."
 - The style spec still applies where it can (chapter order, insert close-ups, honest pacing) — as
   reference, not requirement. Creative judgment over formula compliance. When in doubt, make the cut
   and flag the doubt as a marker instead of stopping to ask.
@@ -94,6 +100,12 @@ Many real projects arrive incomplete: no product page yet, no script, no VO, thi
   hardware-completeness checklist (rule 5b) is verified with full-res frame crops, not
   contact sheets.
 - Dan finesses every install section — deliver rough cut + markers + muted alternates track, not "final."
+  Alternates are placed AT the beat they'd replace (never parked at the timeline head) and trimmed
+  flush with V1's end.
+- **"The footage doesn't show X" is a verified claim, not an observation** (TASTE 5c): save the checked
+  full-res crops to `99_claude\qc\` and re-check at different timestamps before writing it. A false
+  absence silently deletes real beats (proven 2026-07-31: a false "no tool at the bench" removed the
+  tool-tightening beat from both sides of a cut).
 - Rough-cut accuracy promise is ±1s per cut. Don't claim better.
 - Fitment years/models in any copy come from the product page verbatim — never paraphrase fitment.
 - Subagents get exact paths, never "go find it." Externals are never touched, connected or not.

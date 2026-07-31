@@ -17,6 +17,19 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
    fully in frame so trimming is all he needs to do. Beats can lengthen whenever uncertain.
 2b. **Fastener groups: first fastener gets most/all of its action; subsequent fasteners in
    the group get progressively less screen time.** (Dan, 2026-07-30)
+2c. **Cut the transit, keep the action.** Cut points live in the dead space BETWEEN
+   fasteners/positions — never on the action itself. v03 kept a long uncut walk from the
+   top screw to the bottom screw, then cut away just as the bottom screw's loosening began.
+   The move between fasteners is what gets removed; the moment work starts is what stays.
+   (Dan, v03 notes 2026-07-31)
+2d. **One pass per fastener — never bounce back.** Once the edit leaves a fastener it never
+   returns (v03 went top screw → one turn on bottom → BACK to top). Fastener screen time is
+   monotonic per rule 2b: first gets most, each next gets less, none gets a second visit.
+   (Dan, v03 notes 2026-07-31)
+2e. **Fumble filter.** Segments where the installer fumbles, hesitates, or handles the part
+   awkwardly are ALWAYS cut — choose the smoothest coverage of every action so the
+   installer looks professional. If the only coverage of an action includes a fumble, trim
+   to the clean portion. (Dan, v03 notes 2026-07-31: "always should be cut out")
 3. **Removal of an OE piece gets shown ~95% of the time, in frame** (e.g. bracket coming
    off the bar end). Never infer the part leaving the vehicle.
 4. **Reassembly grammar (the canonical beat template):** bring bracket/part into frame →
@@ -31,11 +44,29 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
    FIRST fastener of a group gets its longer rotations, not only the hard "torque snap";
    (e) part brought INTO frame before attachment (rule 4 opener). These details are
    invisible at contact-sheet resolution — verify hardware beats with full-res frame crops.
+   **Chronic misses: (a) OE-removal, (b) washers, and (c) tool beat were ALL missed again
+   by v03 on a different model — treat these three as the highest-risk items every run.**
+5c. **Absence claims require saved evidence.** "The footage doesn't show X" is as dangerous
+   as "it's fixed" — v03 reported "no driver ever appears in 5743, checked full-res crops
+   at 16 timestamps" while a screwdriver is plainly in use at 120.5–127s, and that false
+   negative deleted the tool beat from BOTH sides of the edit. Before claiming any 5b item
+   absent: SAVE the checked crops to `99_claude\qc\` (timestamp in each filename) and
+   re-check on a second pass at DIFFERENT timestamps. A wrong absent-beat claim silently
+   deletes real beats. (forensics 2026-07-31)
+5d. **No dead air inside beats.** Trim heads and tails to the action — more than ~2s of
+   nothing-happening in frame is a miss (v03 shipped 6s of empty frame after the mirror
+   came off and 6–7s of dead air heading the both-guards display shot). Verify by sampling
+   frames through the INTERIOR of every chosen range, not just its boundaries;
+   motion-energy scans are hints for finding candidates, never verification of the pick.
+   (Dan, v03 notes 2026-07-31)
 6. **Show the product assembled** once put together (bench display beat earns its length —
    Dan held ~13s on the finished-guard display).
 7. **Reference wide before ambiguous close-up.** If the next close-up could be anywhere on
    the vehicle, precede it with a quick wide/orienting shot. Dan also punches in (scales)
-   4K shots in post when the framing needs help.
+   4K shots in post when the framing needs help. **When adding an orienting wide, choose
+   the portion of the take with purposeful action — not the installer getting their
+   bearings** (v03's establishing-wide instinct was right, its section pick was the
+   milling-around part; Dan, v03 notes 2026-07-31).
 8. **Insert moments (pin holes, alignment features): show, then move.** Once the thing is
    inserted, cut quickly. Lingering is acceptable when unsure.
 9. **Tool identification shots are keepers.** If the installer holds the tool up in frame,
@@ -70,3 +101,6 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
 14. Dan strips audio entirely from MOS finesse timelines (his finesse had 0 audio items).
 15. Dan duplicates Claude's sequence and finesses the copy — diff is always
     claude-sequence vs "<name> DAN FINESSE", markers on his copy carry the WHY.
+16. **V2 alternates sit at the timeline position of the V1 beat they'd replace** (and are
+    trimmed so they never extend past V1's end). Parking them at the timeline head is
+    wrong — v03 regression, 2026-07-31.
