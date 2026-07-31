@@ -123,6 +123,28 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
 13. **End the install body on the completed side, clean shot.** No both-sides victory-lap
     wide required in the body (that's outro/glamour territory).
 
+## VO-first cuts (product spots, graphics-led) — started 2026-07-31, slingshot carplay v01
+
+18. **The VO line is proven on screen.** Whatever the narration names must be visible while
+    the line plays — "plug in your iPhone" needs the phone/plug on screen. If no footage
+    proves the line, a graphic or animation can stand in (a phone-charging animation counts).
+    (Dan's 55s note, 2026-07-31)
+19. **Vehicle continuity between cuts.** Stick to as few vehicle switches between adjacent
+    cuts as possible — hopping vehicles jars the viewer. Batch same-vehicle shots; change
+    vehicles at section boundaries, not mid-thought. (Dan, 2026-07-31)
+20. **Overlay graphics: lean in.** Hi-tech overlay elements are encouraged and safe to
+    OVER-include in a rough — they're an easy cut if overdone (rule 2's rough-runs-long
+    philosophy, applied to graphics). Full-screen Remotion/HyperFrames animation scenes are
+    welcome too, not just overlays. Park experimental/bonus graphics on the muted "hidden"
+    track — Dan rates these among his favorite elements; keep feeding that track.
+21. **Masking + transforms are open season.** Cut UI displays out with a mask and reuse them
+    as design elements over action shots; take liberties with color correction, scaling,
+    positioning, and keyframed transforms whenever it serves the VO. (Dan: "i'd encourage it")
+22. **Footage identity includes vehicle GENERATION.** Right-family/wrong-generation footage
+    (a 2018 Slingshot dash in a video for the 2020+ system) is UNUSABLE for a product tied
+    to a specific system — verify the generation/UI on screen against the product's target
+    before cutting it in. Extends rule 17's identity discipline. (Dan, 2026-07-31)
+
 ## Workflow facts
 
 14. Dan strips audio entirely from MOS finesse timelines (his finesse had 0 audio items).
@@ -134,6 +156,15 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
 17b. **MOS rough is the deliverable; conforming the cut to VO is Dan's job, permanently.**
     Leave beats long and actions complete (rule 2) so trimming to VO is all he needs —
     never try to pre-time an MOS cut to unwritten narration. (Dan, 2026-07-31)
+17c. **120fps footage defaults to 23.976 by interpretation** (conform, not retime — motion
+    plays at ~20%, buttery). That's the standing read for glamour material. EXCEPTION:
+    real-time demos that happen to be shot at 120fps (e.g. a screen-capture demo of a UI
+    boot animation) stay real-time. Decide per clip at ingest and note it in the footage
+    log. (Dan, 2026-07-31)
+17d. **VO channel QC.** Narration must be centered/dual-mono on the timeline — a stereo
+    source can still land left-speaker-only via clip channel mapping (happened 2026-07-31).
+    Verify mechanically on the RENDER: ffprobe channel count + per-channel loudness
+    (ffmpeg astats); near-equal RMS both sides or it's a miss.
 17. **Footage-log labels come only from frames actually viewed.** Never label a beat from a
     motion-energy curve or audio scan alone — v03's "mount coming off" labels were
     curve-inferred guesses; it shipped the bracket-removal moment without knowing it held

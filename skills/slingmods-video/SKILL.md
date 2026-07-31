@@ -105,6 +105,11 @@ Many real projects arrive incomplete: no product page yet, no script, no VO, thi
   V1's end** or the render grows a black tail. Trim alternates flush.
 - After rendering: ffprobe the frame count against the cut list AND contact-sheet-watch the
   render itself (catches dead-air tails and black gaps that per-cut QC misses).
+- **VO renders get audio QC too** (TASTE 17d): ffprobe the render's audio stream and compare
+  per-channel loudness (`ffmpeg -af astats`) — narration sitting in one speaker is a shipped bug,
+  and a stereo source file does not rule it out (clip channel mapping can undo it).
+- **120fps sources: conform to 23.976 by interpretation** (slow-mo by default, TASTE 17c);
+  real-time-demo exception decided per clip at ingest and noted in the footage log.
 
 ## Hard rules
 - **Read `TASTE.md` (repo root) before cutting anything, and check every chapter against it
