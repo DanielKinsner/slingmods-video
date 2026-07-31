@@ -137,6 +137,13 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
     philosophy, applied to graphics). Full-screen Remotion/HyperFrames animation scenes are
     welcome too, not just overlays. Park experimental/bonus graphics on the muted "hidden"
     track — Dan rates these among his favorite elements; keep feeding that track.
+20b. **Motion-graphics house style is OPEN — do not mimic prior videos.** Dan historically
+    used downloaded templates; the Can-Am CarPlay video was his first custom callout pass
+    ever, so its graphic vocabulary is NOT canon to copy. Never imitate an earlier video's
+    graphics style unless Dan explicitly says "copy that style." Propose your own; Dan
+    curates via feedback and the keepers graduate into this doc and STYLE-SPEC. The ONE
+    persistent element that predates all of this: the red/black product footer, spec'd in
+    STYLE-SPEC §Graphics. (Dan, 2026-07-31)
 21. **Masking + transforms are open season.** Cut UI displays out with a mask and reuse them
     as design elements over action shots; take liberties with color correction, scaling,
     positioning, and keyframed transforms whenever it serves the VO. (Dan: "i'd encourage it")

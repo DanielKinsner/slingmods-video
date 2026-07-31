@@ -55,3 +55,19 @@ Problem-first is used when the product solves a pain, formula-first when it adds
 - Intro visuals never show the install; wrenches appear only after the intro.
 - Install VO explains WHILE the action happens (long takes), with close-up inserts on the fastener/connection.
 - End card / outro block gets a full ~29s: recap + CTA + logo sting. Don't rush it.
+
+## Graphics (added 2026-07-31)
+
+The ONE canonical persistent graphic element across the channel is the **red/black product
+footer** (lower-third band). Measured from the Can-Am CarPlay video @18.5s, 4K frame:
+- Full-width band across the bottom ~12% of frame; near-black charcoal fill with a thin red
+  rule along its top and bottom edges.
+- Product name: bold red condensed ALL-CAPS, centered ("EVOLUTIONR USB HEADSET BYPASS /
+  CARPLAY ACTIVATION ADAPTER").
+- Sub-line: "AVAILABLE NOW AT SLINGMODS.COM" in white, letter-spaced caps, centered under it.
+- SlingMods.com wordmark at the left end; SM shield logo at the right end.
+- Used over product beauty/tabletop shots, typically during the product-introduction beat.
+
+Everything else (callouts, badges, title cards, diagrams, full-screen animations) has NO
+established house style — see TASTE rule 20b. Historically Dan used downloaded templates;
+custom motion graphics are new ground being established run by run.
