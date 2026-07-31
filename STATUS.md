@@ -78,6 +78,15 @@ Updated: 2026-07-31 morning (office PC)
 - [ ] Possible `slingmods-publish` skill: YouTube title/description/chapters/tags formula (titles follow "Product for the Vehicle" pattern — data already in analysis/summary.json).
 
 ## Next milestone
+**f3t exhaust v01 PASSED the generalization test (2026-07-31, Opus high):** 2:34/18 cuts, all six
+doc steps landed incl. OE-removal (the chronic miss), rule-5c absence evidence used correctly
+(off-camera nut removal, 3 saved uncropped frames), washer-trap avoided in both directions, zero
+dead air, mechanics frame-exact. Dan's grade: near-perfect rough; misses = opener composition
+(edge-cropped tool-hold → TASTE 9/9b rewritten: tool-ID isn't house style, tools get their own
+segment) + minor pacing trims. Opus agent to rebuild it in Premiere next (rebuild block is in the
+cut list). VO conform is permanently Dan's (TASTE 17b).
+
+Previous milestone (for reference):
 **thermal_spyder f3t exhaust — INSTALL SECTION ONLY, fresh-agent generalization test** (the first
 run on footage TASTE was not derived from; no quarantine needed). 5 install clips @23.976 (~6 min
 total). `00_docs\spyder RT instructions as reference.txt` is Dan-authored + verified from a

@@ -11,6 +11,8 @@ Full measured numbers live in `STYLE-SPEC.md` in the `slingmods-video` repo (Doc
 ## Two video types
 - **Product Spot** (2:00–2:40): no install section, feature tour instead. Skills: script → intro → outro.
 - **Install Video** (5:30–11:00): chaptered install body. Skills: script → intro → install → outro.
+  Install videos carry a dedicated **tools segment** ahead of the install body (motion-graphics tool
+  list + a shot of the tools laid out) — the install cut itself never needs tool-ID beats (TASTE 9).
 
 ## Project folder contract
 Every project is a copy of `M:\_template`, named `vendor_vehicle_product`. Read its `README.md` first —

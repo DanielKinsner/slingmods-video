@@ -85,9 +85,17 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
    milling-around part; Dan, v03 notes 2026-07-31).
 8. **Insert moments (pin holes, alignment features): show, then move.** Once the thing is
    inserted, cut quickly. Lingering is acceptable when unsure.
-9. **Tool identification shots are keepers.** If the installer holds the tool up in frame,
-   include that shot so VO can name the tool (installer sometimes says it out loud —
-   transcription will catch this).
+9. **Tool-ID shots are NOT house style.** Dan's videos carry a dedicated tools segment
+   BEFORE the install (motion-graphics tool list + a shot of the tools laid out) — the
+   install cut never needs to show a tool off. An installer tool-hold is utility footage:
+   park ONE on the muted alternates track as pacing filler for longer VO, don't spend a
+   V1 beat on it. (Dan, 2026-07-31 — REPLACES the earlier "tool-ID shots are keepers"
+   rule, which was a wrong inference.)
+9b. **Presence-verified ≠ composition-verified.** Any shot chosen for a communicative job
+   (opener, orienting wide, display) gets a full-res COMPOSITION check: is the subject
+   actually framed and readable, or edge-cropped/disembodied? The f3t v01 opener
+   "verified" the wrench in hand while the installer was 90% out of frame — the crop
+   proved the tool existed, nobody asked what the shot READS. (2026-07-31)
 
 ## Structure
 
@@ -123,6 +131,9 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
 16. **V2 alternates sit at the timeline position of the V1 beat they'd replace** (and are
     trimmed so they never extend past V1's end). Parking them at the timeline head is
     wrong — v03 regression, 2026-07-31.
+17b. **MOS rough is the deliverable; conforming the cut to VO is Dan's job, permanently.**
+    Leave beats long and actions complete (rule 2) so trimming to VO is all he needs —
+    never try to pre-time an MOS cut to unwritten narration. (Dan, 2026-07-31)
 17. **Footage-log labels come only from frames actually viewed.** Never label a beat from a
     motion-energy curve or audio scan alone — v03's "mount coming off" labels were
     curve-inferred guesses; it shipped the bracket-removal moment without knowing it held
