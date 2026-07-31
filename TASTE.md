@@ -24,6 +24,13 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
    "torquing" motion as the ender. Same rules as removal, mirrored.
 5. **Complete the micro-action.** Don't clip a beat before its point lands (washer fully
    seated on screw before cutting; finger-tight means you saw it get finger-tight).
+5b. **Hardware-completeness checklist — graded misses from fresh-test v02 (2026-07-30):**
+   every install chapter gets checked against these before locking: (a) OE piece removal
+   shown (rule 3 — v02 skipped the outer bracket coming off); (b) washers-onto-screws shown
+   when the installer shows it; (c) tool tightening beat present, not just implied; (d) the
+   FIRST fastener of a group gets its longer rotations, not only the hard "torque snap";
+   (e) part brought INTO frame before attachment (rule 4 opener). These details are
+   invisible at contact-sheet resolution — verify hardware beats with full-res frame crops.
 6. **Show the product assembled** once put together (bench display beat earns its length —
    Dan held ~13s on the finished-guard display).
 7. **Reference wide before ambiguous close-up.** If the next close-up could be anywhere on
@@ -42,7 +49,10 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
     smoothly (familiarity). Go with whichever side you have more end-to-end confidence in.
     Never bounce left↔right through the edit. **The "repeat on the other side" beat is a
     GLAMOUR shot of the other side already installed** — not work footage of the second
-    side. (Dan, 2026-07-30)
+    side. (Dan, 2026-07-30) **One-side applies to the BENCH too:** assembling the second
+    guard/part at the bench is still second-side content — cut it (fresh-test v02 graded
+    down for two second-guard bench beats). Dan's finesse: zero guard-2 bench beats; the
+    both-guards display served as the cold open instead.
 10b. **Punch-ins are authorized.** Scale/reposition 4K shots whenever framing is ambiguous
     or the action is small in frame — commit to it confidently; Dan can adjust easily and
     everything added is appreciated. Reference-wide first, then the punched close-up.

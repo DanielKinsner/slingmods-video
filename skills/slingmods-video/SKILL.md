@@ -81,6 +81,10 @@ Many real projects arrive incomplete: no product page yet, no script, no VO, thi
   and flag the doubt as a marker instead of stopping to ask.
 
 ## Hard rules
+- **Read `TASTE.md` (repo root) before cutting anything, and check every chapter against it
+  before rendering** — it's Dan's editing-style ledger, grown from finesse-diffs; the
+  hardware-completeness checklist (rule 5b) is verified with full-res frame crops, not
+  contact sheets.
 - Dan finesses every install section — deliver rough cut + markers + muted alternates track, not "final."
 - Rough-cut accuracy promise is ±1s per cut. Don't claim better.
 - Fitment years/models in any copy come from the product page verbatim — never paraphrase fitment.
