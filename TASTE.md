@@ -108,9 +108,10 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
     guard/part at the bench is still second-side content — cut it (fresh-test v02 graded
     down for two second-guard bench beats). Dan's finesse: zero guard-2 bench beats; the
     both-guards display served as the cold open instead.
-10b. **Punch-ins are authorized.** Scale/reposition 4K shots whenever framing is ambiguous
-    or the action is small in frame — commit to it confidently; Dan can adjust easily and
-    everything added is appreciated. Reference-wide first, then the punched close-up.
+10b. **Punch-ins are OFF by default.** Do not scale/reframe camera footage unless Dan
+    enables it in the project's opening prompt. When he does, commit confidently:
+    reference-wide first, then the punched close-up. (Reversed 2026-07-31 — this was
+    briefly a standing authorization; it is now opt-in per project.)
 11. **Cold-open product tease: nice-to-have, not mandatory** — the installer doesn't always
     shoot that material. Keep when the footage gives it.
 12. **Presenter pointing/explainer shots without known meaning: cut them.** Dan dropped both
@@ -149,9 +150,12 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
     grammar, or surface aesthetic. They're independent; assuming "all of it" transcribed a
     playful doodle look onto a product that wanted iPhone-launch sleekness (2026-07-31).
     Default assumption: Dan means the STRUCTURE unless he says "copy the look."
-21. **Masking + transforms are open season.** Cut UI displays out with a mask and reuse them
-    as design elements over action shots; take liberties with color correction, scaling,
-    positioning, and keyframed transforms whenever it serves the VO. (Dan: "i'd encourage it")
+21. **Masking + transforms are open season — for GRAPHIC elements.** Cut UI displays out
+    with a mask and reuse them as design elements over action shots; take liberties with
+    color correction, scaling, positioning, and keyframed transforms on graphics, cutouts,
+    and animation scenes whenever it serves the VO. (Dan: "i'd encourage it")
+    Reframing/punching-in CAMERA footage is separate and governed by 10b — off unless
+    Dan's opening prompt enables it.
 22. **Footage identity includes vehicle GENERATION.** Right-family/wrong-generation footage
     (a 2018 Slingshot dash in a video for the 2020+ system) is UNUSABLE for a product tied
     to a specific system — verify the generation/UI on screen against the product's target
