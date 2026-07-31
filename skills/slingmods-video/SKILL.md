@@ -27,11 +27,15 @@ PROJECT INFO block has product URL, vehicle, vendor, and status checkboxes. Key 
 
 ## Pipeline order
 1. **Ingest** — inventory `01_footage\`; auto-split glamour vs install by fps (`ffprobe` — 120/60fps = glamour
-   candidates). Frame-sample + transcribe narration + audio-transient scan. Transcribe CREW audio too —
-   off-hand remarks are HINTS for part/side identity, never proof (Whisper transcripts carry garbage
-   lines); confirm side/part identity from on-screen geometry or log it as UNKNOWN (TASTE 17).
-   Footage-log beat labels come only from frames actually viewed — never from motion-energy curves
-   or audio scans alone. Write `99_claude\footage-log.md`
+   candidates). Frame-sample + audio-transient scan. **Transcription is ASK-FIRST, never default** —
+   ask Dan before transcribing footage audio: it costs real time and context, and ~95% of the time
+   the installer says nothing (the other 5% is tool sizes, irrelevant to a rough cut). Default to
+   skipping whenever Dan has supplied written step instructions. Audio becomes a first-class input
+   ONLY once Dan has intentionally generated VO — then it drives graphic overlays and b-roll/shot
+   selection. If a transcript does exist: off-hand remarks are HINTS for part/side identity, never
+   proof — confirm from on-screen geometry or log it as UNKNOWN (TASTE 17). Footage-log beat labels
+   come only from frames actually viewed — never from motion-energy curves or audio scans alone.
+   Write `99_claude\footage-log.md`
    and flag garbage (blur/exposure). Show Dan the log BEFORE cutting.
 2. **Script** — `slingmods-script`. Dan approves. Always.
 3. **VO** — *current phase:* Dan generates ElevenLabs VO himself and drops per-section files in
