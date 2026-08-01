@@ -82,6 +82,26 @@ the cut list must record each clip's native fps (`ffprobe`), never assume it.
 4. **Resolve side:** `create_timeline_from_clips` `end_frame` is out-**exclusive** (probed on
    Studio 20.2.2.10). Cut lists use 0-based frames, out-exclusive, and are written from Resolve's
    readback (`timeline.source_range_report`), never from intent.
+5. **Motion/keyframe automation (proven 2026-07-31, Premiere 26.3 + hetpatel-11 MCP):**
+   - **Read framing FIRST, key RELATIVE to it.** `get_clip_properties` returns live Motion values
+     (opacity/scale/rotation/position in pixels). Editors park clips at non-default scales
+     (60/85/106/135 in one real sequence) — keyframing absolute values without reading first
+     destroys their framing.
+   - `add_keyframe` (component "Motion"/"Opacity", param "Scale"/"Opacity") takes SEQUENCE-time
+     seconds; adding at an existing keyframe's time OVERWRITES it (clean fix path). Verify with
+     `get_keyframes`. Keyframes land LINEAR — easing is not settable via API
+     (`set_keyframe_interpolation` is broken); leave a note for Dan to right-click → ease keepers.
+   - Useful accident: `set_keyframe_interpolation`'s error response dumps the clip's full Motion
+     property list with current values.
+   - **The ExtendScript surface on this MCP is a STUB**: `execute_extendscript` and
+     `evaluate_expression` return "undefined"/the version string no matter the input. This
+     mimics a "wedged bridge" but is NOT one — ping + all dedicated tools keep working. Never
+     diagnose the bridge as dead from those two tools alone (2026-07-31: a healthy bridge was
+     wrongly written off for a whole morning on this symptom).
+   - Generated-asset round trip proven: PNG sequence → ProRes 4444 (`yuva444p10le`) alpha .mov →
+     `import_media` → `add_to_timeline_batch` (+2 ms bias, `linkAudio:false`) → track/layer
+     placement → `save_project`. `duplicate_sequence` makes a lab copy so the editor's own
+     sequence is never touched — always work on the copy.
 
 ## Discovery mode (when inputs are missing — common, not exceptional)
 Many real projects arrive incomplete: no product page yet, no script, no VO, thin vendor instructions.

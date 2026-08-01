@@ -1,6 +1,31 @@
 # STATUS — slingmods-video pipeline
 
-Updated: 2026-07-31 morning (office PC)
+Updated: 2026-07-31 end of day (office PC)
+
+## 2026-07-31 afternoon — VO-first pipeline opened up (carplay), Premiere automation proven
+- **Slingshot CarPlay video (E:\claude\projects\evolutionr_usb car play):** first VO-first build.
+  Lead session wrote reference anatomy (Can-Am act 1) + build brief; Fable builder agent delivered
+  Act1+Sections2-3 (4:05, `slingshot_carplay_act12_v02_review.mp4`) with 16 GFX overlays, hidden
+  OPTIONS track (Dan's favorite elements), honest flags (no lit LED / Allow-dialog never filmed /
+  no clean start-press). Dan's feedback encoded same-day (TASTE 18-22, 17c/17d, 20b, 9 rewritten,
+  10b reversed). Freestyle motion-design agent FIRED with design bible
+  (`99_claude\freestyle-animation-designs.md`: 7 full-screen scenes, 5 overlays, transitions
+  addendum) + style law v2 (Apple-launch sleekness; NOT the doodle look). Renders land in
+  `overlays\generated\freestyle\`.
+- **Premiere MCP automation proven live in Dan's project** (lab sequence "CLAUDE LAB — carplay
+  act1", his sequence untouched): read-framing→relative keyframing (30 kfs/11 clips), generated
+  assets (ProRes 4444 alpha round trip — HUD frame, callout chips, ripple transitions, kinetic
+  type, doodle card, bg plates in `overlays\generated\lab\`), import→place→save. Doctrine + API
+  gotchas encoded in skill §5 (ES surface is a STUB — don't diagnose bridge dead from it).
+- **Dan's pipeline caveats (his words, the CarPlay lessons):** VO must be paced/phrased right the
+  first time; some shots off base; footage usability must be verified up front (camera-guy risk);
+  agents need clear direction, not "be creative"; SKU/product page must exist for final; written
+  install instructions needed BEFORE rough cut; boss-driven changes kill overlay timing →
+  graphics pass belongs LAST. Perfect-world one-shot prompt drafted in transcript.
+- **Open next:** Phase-0 backtest (agent drafts install instructions from exhaust footage cold;
+  grade vs Dan's verified RT doc — Dan has projects queued, waiting for a work session); grade
+  freestyle portfolio (keepers graduate style to TASTE/STYLE-SPEC); Dan finesses exhaust v01 +
+  handguards v02; possible slingmods-spot skill once VO-first style settles.
 
 ## Done
 - **Fresh-test round 2 (Opus 5, xhigh) analyzed + debriefed (2026-07-31):** v03 cut 4:53/37 —
