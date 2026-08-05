@@ -150,7 +150,18 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
     grammar, or surface aesthetic. They're independent; assuming "all of it" transcribed a
     playful doodle look onto a product that wanted iPhone-launch sleekness (2026-07-31).
     Default assumption: Dan means the STRUCTURE unless he says "copy the look."
-21. **Masking + transforms are open season — for GRAPHIC elements.** Cut UI displays out
+20c. **Graphics direction is reference-first, and the asset pipe runs both ways.** (Dan,
+    2026-08-05, f3t exhaust graphics.) Never go prose → final render in one hop: get a visual
+    reference from Dan ("got a frame?"), or write a short concept doc (design-bible style,
+    one paragraph per piece) and get kill/keep verdicts before executing keepers. Proven
+    gradient in one session: prose spec → "great placement, lackluster execution"; concept
+    doc → good; his frame references → "you just f'n slay it." AND: even for the agent's own
+    ideas, ask Dan to PRODUCE assets — "yo, can you make me this real quick?" with a one-line
+    spec (subject, angle, background, size). His Photoshop cutouts and generated props beat
+    code-drawn primitives every time; split every shot's asset list into "agent builds" vs
+    "Dan makes." When writing an image-gen prompt for him, spec the animation constraints
+    into it (dead-level, pivot centered, empty mount points, pure black bg, lighting match,
+    wide aspect) so the output drops straight into the composition. Cut UI displays out
     with a mask and reuse them as design elements over action shots; take liberties with
     color correction, scaling, positioning, and keyframed transforms on graphics, cutouts,
     and animation scenes whenever it serves the VO. (Dan: "i'd encourage it")
