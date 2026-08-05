@@ -102,6 +102,18 @@ the cut list must record each clip's native fps (`ffprobe`), never assume it.
      `import_media` → `add_to_timeline_batch` (+2 ms bias, `linkAudio:false`) → track/layer
      placement → `save_project`. `duplicate_sequence` makes a lab copy so the editor's own
      sequence is never touched — always work on the copy.
+   - **`export_frame` and `capture_frame` are silent no-ops** (same stub family, measured
+     2026-08-05): success:true, no file written, on any sequence, any path style — and
+     backslashes in `outputPath` get eaten. For visual ground truth, extract frames with
+     ffmpeg from source media (source time = clip inPoint + (timeline t − clip start); check
+     Motion transform via `get_clip_properties` first) and composite overlays with ffmpeg.
+   - **Premiere file-locks block in-place mov updates** (2026-08-05): ffmpeg overwriting a
+     .mov that Premiere has open dies with Permission denied; `refresh_media` does NOT
+     release the lock; `replace_clip_media` times out (stub family). The lock is per-file
+     and volatile — a sibling overwrote fine seconds earlier. Recipe: convert to a NEW
+     filename, import, overwrite-place at the identical window/track. **Timestamp-verify
+     every file after a batch ffmpeg loop** — a failed conversion leaves a stale .mov
+     silently (happened twice in one session).
 
 ## Discovery mode (when inputs are missing — common, not exceptional)
 Many real projects arrive incomplete: no product page yet, no script, no VO, thin vendor instructions.
