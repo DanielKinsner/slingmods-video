@@ -23,6 +23,13 @@ Updated: 2026-08-05 end of day (office PC)
   source media is the frame-truth fallback); Premiere file-locks block in-place .mov
   overwrites (new-filename + re-place recipe; timestamp-verify every batch conversion —
   two silent stale-file failures in one session).
+- **Late-session addendum (post-push):** weight scene went 2 more rounds off Dan's generated
+  reference + full written brief -> final "Stock vs Thermal R&D" two-panel comparison
+  (weight-compare2.mov on V5 @0:49): seamless bookends pixel-matched to the V1 photo framings,
+  word-level-whisper sync (4.20 lb on "four pounds", LIGHTER 1 frame after the word), Bahnschrift
+  + orange, branding patched, rendered 29.97 for retime headroom (Dan's call: he can conform
+  down but not up — consider 30fps default for overlay renders). Dan: "epic that looks good".
+  Receipts: event-log rounds 4-5.
 - **Open next:** POLISH PASS (Dan, tomorrow) — retry a few scenes with the reference-first +
   Dan-makes-assets loop; his generated brushed-steel balance-beam prop swaps into the weight
   scene (queued in project PICK-LIST); weight-scene SFX bed audition; Dan turned in the
