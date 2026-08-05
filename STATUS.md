@@ -1,6 +1,32 @@
 # STATUS — slingmods-video pipeline
 
-Updated: 2026-07-31 end of day (office PC)
+Updated: 2026-08-05 end of day (office PC)
+
+## 2026-08-05 — f3t exhaust motion-graphics session (Premiere MCP, live in Dan's project)
+- **thermal_spyder f3t exhaust:** Dan's near-final edit got a full graphics pass, built in a
+  lab duplicate ("CLAUDE LAB — f3t graphics") of his `f3t_exhaust_install_v01`; his sequence
+  untouched, originals disabled-not-deleted. VERIFIED on the timeline (readback, 0 frame
+  deltas) and saved: Bench Scan tools card (capsules traced around real tools, anchor-verified
+  vs the photo's live transform), Torque Target bolt callout (old yellow circle was ~350px off
+  the actual hanger bolt — retargeted to the real fastener), The Scale Tips weight scene
+  (Dan's Photoshop muffler cutouts on a hairline balance beam, real Mettler scale-readout
+  crops as proof insets, count-roll to 11.55 lb, −4.2 LB stamp; synthesized SFX bed muted on
+  A1), Machined Pills end card (lands on his existing click SFX beats), 3 Machined Tags, an
+  optional chapter light-sweep, and two template-matched "Important" banners (cool-down @1:23,
+  torque spec @2:36, exact wording from Dan's references). Whisper VO transcripts drove all
+  callout timing. Receipts: project `99_claude\event-log.md` (3 rounds) + `99_claude\gfx\`
+  (design bible, PICK-LIST, anchor-check composites).
+- **The session's big lesson → TASTE 20c:** graphics direction is reference-first (prose →
+  "lackluster"; concept-doc verdicts → good; Dan's frame references → "slay"), and the asset
+  pipe runs both ways — ask Dan to generate/produce assets even for agent ideas.
+- **New MCP gotchas → skill §5:** export_frame/capture_frame are silent no-ops (ffmpeg on
+  source media is the frame-truth fallback); Premiere file-locks block in-place .mov
+  overwrites (new-filename + re-place recipe; timestamp-verify every batch conversion —
+  two silent stale-file failures in one session).
+- **Open next:** POLISH PASS (Dan, tomorrow) — retry a few scenes with the reference-first +
+  Dan-makes-assets loop; his generated brushed-steel balance-beam prop swaps into the weight
+  scene (queued in project PICK-LIST); weight-scene SFX bed audition; Dan turned in the
+  review-version cut today.
 
 ## 2026-07-31 afternoon — VO-first pipeline opened up (carplay), Premiere automation proven
 - **Slingshot CarPlay video (E:\claude\projects\evolutionr_usb car play):** first VO-first build.
