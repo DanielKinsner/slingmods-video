@@ -96,6 +96,15 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
    actually framed and readable, or edge-cropped/disembodied? The f3t v01 opener
    "verified" the wrench in hand while the installer was 90% out of frame — the crop
    proved the tool existed, nobody asked what the shot READS. (2026-07-31)
+23. **Install transitions: cross dissolves, nothing flashy.** Dan puts a cross dissolve on
+   most clip-to-clip cuts in an install body. It keeps the flow smooth and reads as time
+   passing between steps, where a jump cut would jar.
+   - Never put whips, light leaks, flashes or punch-in hits inside the install. Customers
+     are following along with tools in hand, so the install stays distraction-free.
+   - "Fun" transitions belong to the intro/glamour and outro/riding sections only.
+   - Dan adds the dissolves himself in Premiere; the MCP can't place transitions reliably.
+     Leave a little source media past each cut so a dissolve has frames to blend.
+   (Dan, 2026-10-30, EvolutionR rack long-form: he pulled Claude's baked whips out of the install.)
 
 ## Structure
 
