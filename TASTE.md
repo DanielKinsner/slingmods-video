@@ -106,6 +106,21 @@ evolutionr_canyon handguards finesse (Claude 4:27 / 20 cuts → Dan 2:40 / 33 cu
      Leave a little source media past each cut so a dissolve has frames to blend.
    (Dan, 2026-10-30, EvolutionR rack long-form: he pulled Claude's baked whips out of the install.)
 
+24. **Every hardware item the VO names gets its own shot, landed on its word.** Dan split "add the rubber
+   washer, flat washer, and nylon nut" into three VO pieces, each on its own shot (rubber washer → flat
+   washer → nut). v1 dropped the rubber washer though it was on camera: rule 5b(b) missed AGAIN. Check
+   before render: count the items in the line, find one verified shot per item. (Dan, flag pole finesse 2026-11-09)
+25. **Show the fastener get there.** Threading and finger-tightening use the part of the take where it's
+   actually running down, not just first contact (Dan swapped the nut to later in the clip). A long run
+   gets its beginning AND near its end, joined by a cross dissolve — v1 kept only the beginning. (2026-11-09)
+26. **Orient on the fastener before the tool arrives.** Under the line that names it, hold ~3 s on the
+   bracket/screw, then cut to the driver going in (Dan, back Phillips screw). Wide → close → wide is fine on
+   a two-tool tightening (Allen outside + socket inside). (2026-11-09)
+27. **Pick the take that SHOWS the claim.** "Make sure it folds forward" needs the pole visibly folding, not
+   a shot where it's already folded. Tape peel: the end of the peel + the clean hole, not the whole peel.
+   No "display hold" after a sub-assembly unless it earns its spot (Dan cut v1's 4 s pole-installed hold).
+   Perception trap: a long chrome rod angled off the bracket was the folded POLE, not a tool. (2026-11-09)
+
 ## Structure
 
 10. **Mirrored L/R installs: pick ONE side and stay there.** Evaluate BOTH sides at ingest —
